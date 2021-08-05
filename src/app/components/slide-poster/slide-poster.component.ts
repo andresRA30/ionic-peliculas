@@ -17,7 +17,7 @@ export class SlidePosterComponent implements OnInit {
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() { }
-  async verDetalle(id: string) {
+  async verDetalle(id: number) {
     const modal = await this.modalCtrl.create({
       component: DetalleComponent,
       componentProps: {

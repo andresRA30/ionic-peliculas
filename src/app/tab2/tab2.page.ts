@@ -34,7 +34,7 @@ export class Tab2Page {
   seleccionarIdea(idea: string) {
     this.textoBuscar = idea;
   }
-  async infoPeli(id: string) {
+  async infoPeli(id: number) {
     const modal = await this.modalCtrl.create({
       component: DetalleComponent,
       componentProps: {
